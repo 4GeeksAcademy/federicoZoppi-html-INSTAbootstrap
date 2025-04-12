@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+                <div class="navbar d-flex justify-content-end">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#createPostModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="createPostModalLabel">Create a New Post</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form>
+                                        <div class="mb-1">
+                                            <label for="postContent" class="form-label">Caption:</label>
+                                            <textarea class="form-control" id="postContent" rows="3"
+                                                placeholder="Add the caption of your post here"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="modal-icons d-flex justify-content-start align-items-center mb-3 mt-3">
+                                        <button type="button" class="btn btn-trasparent border m-1">
+                                            <i class="fa-solid fa-camera"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-trasparent border m-1">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown m-1">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item active" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+        </nav>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pagina1-tab" data-bs-toggle="tab" data-bs-target="#pagina1"
+                    type="button" role="tab" aria-controls="pagina1" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pagina2-tab" data-bs-toggle="tab" data-bs-target="#pagina2" type="button"
+                    role="tab" aria-controls="pagina2" aria-selected="false">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-4" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="pagina1" role="tabpanel" aria-labelledby="pagina1-tab">
+                <div class="container d-flex justify-content-center mt-2">
+                    <div class="row g-1">
+
+                        <div class="container d-flex justify-content-center mt-5" id="pagina1">
+                            <div class="row g-1">
+                                <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+                                    <img src="https://images.freeimages.com/images/large-previews/d91/landscape-1-1-1215172.jpg?fmt=webp&h=350"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+                                    <img src="https://images.freeimages.com/images/large-previews/8f2/capybara-in-nature-0410-5704722.jpg?fmt=webp&h=350"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://images.freeimages.com/images/large-previews/f06/lahore-wildlife-park-1308945.jpg?fmt=webp&h=350"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://images.pexels.com/photos/592077/pexels-photo-592077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://www.phototourbarcelona.com/wp-content/uploads/2020/05/1-1.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpevWjYe_p24iIlkqcayNOCvM-7YYopi4W1Q&s"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://etheriamagazine.com/wp-content/uploads/2019/04/bardenas-reales-navarra-chica-683x1024.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-4 d-flex justify-content-center">
+                                    <img src="https://i.blogs.es/2f746e/incluir_personas_paisajes/1366_2000.jpeg" alt=""
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade d-flex flex-column align-items-center" id="pagina2" role="tabpanel" aria-labelledby="pagina2-tab">
+    
+                <div class="card m-3 w-50">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>Arbol</p>
+                        <p class="text-muted" style="font-size: x-small;">1/12</p>
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/d91/landscape-1-1-1215172.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis.</p>
+                    </div>
+                </div>
+            
+                <div class="card m-3 w-50">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>Capibara</p>
+                        <p class="text-muted" style="font-size: x-small;">2/12</p>
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/8f2/capybara-in-nature-0410-5704722.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis.</p>
+                    </div>
+                </div>
+            
+                <div class="card m-3 w-50">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>León</p>
+                        <p class="text-muted" style="font-size: x-small;">3/12</p>
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/f06/lahore-wildlife-park-1308945.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- <div class="tab-pane fade" style="width: 30rem" id="pagina2" role="tabpanel" aria-labelledby="pagina2-tab">
+                <div class="card m-3">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>Arbol</p>
+                        <p style="font-size: x-small;">1/12</p>
+
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/d91/landscape-1-1-1215172.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis. </p>
+                    </div>
+                </div>
+
+                <div class="card m-3">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>Capibara</p>
+                        <p style="font-size: x-small;">2/12</p>
+
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/8f2/capybara-in-nature-0410-5704722.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis. </p>
+                    </div>
+                </div>
+
+                <div class="card m-3">
+                    <div class="container border d-flex justify-content-between align-items-center">
+                        <p>Leon</p>
+                        <p style="font-size: x-small;">3/12</p>
+
+                    </div>
+                    <img src="https://images.freeimages.com/images/large-previews/f06/lahore-wildlife-park-1308945.jpg?fmt=webp&h=350"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" style="font-size: small;">
+                        <p><strong>50 likes</strong></p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eveniet quasi
+                            dicta eaque laudantium commodi iusto corporis. </p>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+    <!-- 
+    <div class="card" id="pagina2" style="width: 18rem;">
+        <img src="https://images.freeimages.com/images/large-previews/d91/landscape-1-1-1215172.jpg?fmt=webp&h=350"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div> -->
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+</html>
